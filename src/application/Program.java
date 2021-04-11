@@ -28,6 +28,7 @@ public class Program {
 		Double amount = scan.nextDouble();
 		try {
 			account.withdraw(amount);
+			System.out.printf("New balance: %.2f%n", account.getBalance());
 
 		} catch (DomainException e) {
 			System.out.println("Withdraw error: " + e.getMessage());
